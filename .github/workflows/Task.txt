@@ -1,0 +1,24 @@
+PS F:\JSProject\ci-cd-final-project\ci-cd-final-project-JS> gh run list
+STATUS  TITLE                 WORKFLOW     BRANCH  EVENT  ID           ELAPSED  AGE
+✓       СООБЩЕНИЕ О ФИКСАЦИИ  CI workflow  main    push   36139867387  21s      about 5 minutes ago
+X       Initial commit        CI workflow  main    push   36136191358  0s       about 41 minutes ago
+PS F:\JSProject\ci-cd-final-project\ci-cd-final-project-JS> gh run view  36139867387
+
+✓ main CI workflow · 36139867387
+Triggered via push about 5 minutes ago
+
+JOBS
+✓ build in 15s (ID 108086765259)
+
+ANNOTATIONS
+! Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v3, actions/setup-node@v3. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build: .github#2
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+build: .github#1
+
+
+For more information about the job, try: gh run view --job=108086765259
+View this run on GitHub: https://github.com/Ali9858/ci-cd-final-project-JS/actions/runs/36139867387
+PS F:\JSProject\ci-cd-final-project\ci-cd-final-project-JS> gh run view 36139867387 verbose
+accepts at most 1 arg(s), received 2
